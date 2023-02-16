@@ -62,7 +62,7 @@ int VPop (struct VStack *stk)
     if (stk -> size <= 0) return 0;
 
     stk -> size --;
-    
+
     memset ((char *) (stk -> data) + stk -> size * stk -> elem_size, 0, stk -> elem_size);
 
     return 1;

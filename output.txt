@@ -1,0 +1,75 @@
+
+vstk test1 #1:	0.075000s
+vstk test1 #2:	0.064000s
+vstk test1 #3:	0.073000s
+vstk test1 #4:	0.072000s
+vstk test1 #5:	0.056000s
+vstk test1 #6:	0.076000s
+vstk test1 #7:	0.064000s
+vstk test1 #8:	0.064000s
+vstk test1 #9:	0.073000s
+vstk test1 #10:	0.076000s
+lstk test1 #1:	0.287000s
+lstk test1 #2:	0.281000s
+lstk test1 #3:	0.303000s
+lstk test1 #4:	0.364000s
+lstk test1 #5:	0.383000s
+lstk test1 #6:	0.435000s
+lstk test1 #7:	0.502000s
+lstk test1 #8:	0.577000s
+lstk test1 #9:	0.641000s
+lstk test1 #10:	0.677000s
+
+test 1:
+avg vtime = 0.069300
+avg ltime = 0.445000
+
+vstk test2 #1:	0.142000s
+vstk test2 #2:	0.121000s
+vstk test2 #3:	0.141000s
+vstk test2 #4:	0.127000s
+vstk test2 #5:	0.134000s
+vstk test2 #6:	0.120000s
+vstk test2 #7:	0.120000s
+vstk test2 #8:	0.113000s
+vstk test2 #9:	0.121000s
+vstk test2 #10:	0.136000s
+lstk test2 #1:	1.198000s
+lstk test2 #2:	1.327000s
+lstk test2 #3:	1.463000s
+lstk test2 #4:	1.603000s
+lstk test2 #5:	1.734000s
+lstk test2 #6:	1.901000s
+lstk test2 #7:	2.129000s
+lstk test2 #8:	2.222000s
+lstk test2 #9:	2.750000s
+lstk test2 #10:	2.729000s
+
+test 2:
+avg vtime = 0.127500
+avg ltime = 1.905600
+
+vstk test3 #1:	0.046000s
+vstk test3 #2:	0.048000s
+vstk test3 #3:	0.040000s
+vstk test3 #4:	0.040000s
+vstk test3 #5:	0.040000s
+vstk test3 #6:	0.040000s
+vstk test3 #7:	0.040000s
+vstk test3 #8:	0.046000s
+vstk test3 #9:	0.040000s
+vstk test3 #10:	0.041000s
+lstk test3 #1:	0.170000s
+lstk test3 #2:	0.199000s
+lstk test3 #3:	0.205000s
+lstk test3 #4:	0.165000s
+lstk test3 #5:	0.156000s
+lstk test3 #6:	0.187000s
+lstk test3 #7:	0.171000s
+lstk test3 #8:	0.165000s
+lstk test3 #9:	0.172000s
+lstk test3 #10:	0.172000s
+
+test 3:
+avg vtime = 0.042100
+avg ltime = 0.176200

@@ -20,6 +20,7 @@ struct LStack *LStackDtor (struct LStack *stk)
     while (elem)
     {
         next = elem -> next;
+        free (elem -> data);
         free (elem);
         elem = next;
     }
@@ -33,6 +34,7 @@ int LPush (struct LStack *stk, void *buf)
     if (stk == nullptr || buf == nullptr) return 0;
 
     struct ListElem *elem = (struct ListElem *) calloc (1, sizeof (struct ListElem));
+    elem -> data = calloc (1, stk -> elem_size);
 
     memcpy (elem -> data, buf, stk -> elem_size);
 

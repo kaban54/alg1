@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 const size_t BASE_CAP = 100;
-const int NUM_OF_TESTS = 3;
+const int NUM_OF_TESTS = 10;
 
 int main ()
 {
@@ -58,7 +58,7 @@ int Test1 (FILE *file)
         {
             for (j = 0; j < n / 2; j++) VPop (vstk);
 
-            for (j = 0; i < n / 4; j++)
+            for (j = 0; j < n / 4; j++)
             {
                 x = rand ();
                 VPush (vstk, &x);
@@ -95,7 +95,7 @@ int Test1 (FILE *file)
         {
             for (j = 0; j < n / 2; j++) LPop (lstk);
 
-            for (j = 0; i < n / 4; j++)
+            for (j = 0; j < n / 4; j++)
             {
                 x = rand ();
                 LPush (lstk, &x);
@@ -113,7 +113,7 @@ int Test1 (FILE *file)
         LStackDtor (lstk);
     }
 
-    fprintf (file, "\n\ntest 1:\navg vtime = %lf\n avg ltime = %lf\n", avg_vtime / NUM_OF_TESTS, avg_ltime / NUM_OF_TESTS);
+    fprintf (file, "\n\ntest 1:\navg vtime = %lf\navg ltime = %lf\n", avg_vtime / NUM_OF_TESTS, avg_ltime / NUM_OF_TESTS);
 
     return 0;
 }
@@ -157,7 +157,7 @@ int Test2 (FILE *file)
         {
             for (j = 0; j < 10000; j++) VPop (vstk);
 
-            for (j = 0; i < 10000; j++)
+            for (j = 0; j < 10000; j++)
             {
                 x = rand ();
                 VPush (vstk, &x);
@@ -168,7 +168,7 @@ int Test2 (FILE *file)
         {
             for (j = 0; j < n / 2; j++) VPop (vstk);
 
-            for (j = 0; i < n / 4; j++)
+            for (j = 0; j < n / 4; j++)
             {
                 x = rand ();
                 VPush (vstk, &x);
@@ -181,7 +181,7 @@ int Test2 (FILE *file)
         {
             for (j = 0; j < 10000; j++) VPop (vstk);
 
-            for (j = 0; i < 10000; j++)
+            for (j = 0; j < 10000; j++)
             {
                 x = rand ();
                 VPush (vstk, &x);
@@ -216,7 +216,7 @@ int Test2 (FILE *file)
         {
             for (j = 0; j < 10000; j++) LPop (lstk);
 
-            for (j = 0; i < 10000; j++)
+            for (j = 0; j < 10000; j++)
             {
                 x = rand ();
                 LPush (lstk, &x);
@@ -227,7 +227,7 @@ int Test2 (FILE *file)
         {
             for (j = 0; j < n / 2; j++) LPop (lstk);
 
-            for (j = 0; i < n / 4; j++)
+            for (j = 0; j < n / 4; j++)
             {
                 x = rand ();
                 LPush (lstk, &x);
@@ -240,7 +240,7 @@ int Test2 (FILE *file)
         {
             for (j = 0; j < 10000; j++) LPop (lstk);
 
-            for (j = 0; i < 10000; j++)
+            for (j = 0; j < 10000; j++)
             {
                 x = rand ();
                 LPush (lstk, &x);
@@ -256,7 +256,7 @@ int Test2 (FILE *file)
         LStackDtor (lstk);
     }
 
-    fprintf (file, "\n\ntest 2:\navg vtime = %lf\n avg ltime = %lf\n", avg_vtime / NUM_OF_TESTS, avg_ltime / NUM_OF_TESTS);
+    fprintf (file, "\n\ntest 2:\navg vtime = %lf\navg ltime = %lf\n", avg_vtime / NUM_OF_TESTS, avg_ltime / NUM_OF_TESTS);
 
     return 0;
 }
@@ -341,7 +341,7 @@ int Test3 (FILE *file)
         LStackDtor (lstk);
     }
 
-    fprintf (file, "\n\ntest 3:\navg vtime = %lf\n avg ltime = %lf\n", avg_vtime / NUM_OF_TESTS, avg_ltime / NUM_OF_TESTS);
+    fprintf (file, "\n\ntest 3:\navg vtime = %lf\navg ltime = %lf\n", avg_vtime / NUM_OF_TESTS, avg_ltime / NUM_OF_TESTS);
 
     return 0;
 }
